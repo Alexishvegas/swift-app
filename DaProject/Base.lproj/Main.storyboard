@@ -22,34 +22,44 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bob" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTw-Ji-V9K">
-                                <rect key="frame" x="172" y="135" width="31" height="21"/>
+                                <rect key="frame" x="172" y="71" width="31" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCL-oN-84h">
-                                <rect key="frame" x="161" y="236" width="53" height="30"/>
+                                <rect key="frame" x="161" y="178" width="53" height="30"/>
                                 <state key="normal" title="TAP ME"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rdf-IF-Nkh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jX-fw-wR4">
-                                <rect key="frame" x="154" y="326" width="66" height="30"/>
-                                <state key="normal" title="TAP ME 2"/>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hola" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xVt-4S-oLe">
+                                <rect key="frame" x="139" y="257" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Como Estas" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rtC-cD-bS4">
+                                <rect key="frame" x="139" y="371" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hCL-oN-84h" firstAttribute="top" secondItem="DTw-Ji-V9K" secondAttribute="bottom" constant="80" id="8Va-RC-PIE"/>
-                            <constraint firstItem="hCL-oN-84h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DEE-s5-9Wn"/>
-                            <constraint firstItem="DTw-Ji-V9K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GPc-Ep-qoh"/>
-                            <constraint firstItem="6jX-fw-wR4" firstAttribute="top" secondItem="hCL-oN-84h" secondAttribute="bottom" constant="60" id="HnS-ha-feH"/>
-                            <constraint firstItem="6jX-fw-wR4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dQq-Lv-Rf1"/>
-                            <constraint firstItem="DTw-Ji-V9K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="115" id="eAl-y0-f8K"/>
+                            <constraint firstItem="hCL-oN-84h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5Dz-OM-jvE"/>
+                            <constraint firstItem="hCL-oN-84h" firstAttribute="top" secondItem="DTw-Ji-V9K" secondAttribute="bottom" constant="86" id="Byt-ek-AjU"/>
+                            <constraint firstItem="DTw-Ji-V9K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="WTE-zS-M25"/>
+                            <constraint firstItem="DTw-Ji-V9K" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="51" id="bTQ-O3-eve"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="xVt-4S-oLe" id="Q40-2j-T2X"/>
+                        <outlet property="text2" destination="rtC-cD-bS4" id="aqL-DF-kAQ"/>
                         <outlet property="theLabel" destination="DTw-Ji-V9K" id="5IB-wy-6Q3"/>
                     </connections>
                 </viewController>
